@@ -1,0 +1,54 @@
+Rebecca Donohoe
+09/08/18
+PE3
+
+i. The bash command to show your terminal's working directory is: pwd
+
+ii. To create an empty file from the command line you use the command "touch". To create empty.txt, the command would be "touch empty.txt".
+
+iii. To write my name to the empty.txt file the command would be:
+	echo "rebecca" > empty.txt 
+which would delete any content in the file and write "rebecca" at the beginning. If the command:
+	echo "rebecca" >> empty.txt
+would append "rebecca" to the end of the file without deleting any contents already contained in the file. You could check to see if the file was written to by view a set number of lines from the file into the command prompt using:
+	head -n 1 empty.txt
+which did verify that the word was written correctly to the file.
+
+iv. The bash command to rename the file to notempty.txt is:
+	mv empty.txt notempty.txt
+
+v. The command to make a directory is:
+	mkdir pe3_bash
+
+vi. To move the terminals working directory to pe3_bash would be:
+	cd pe3_bash
+
+vii. To create a new directory that has the same parent directory you would
+return to the parent directory by using the command:
+	cd ..
+and then to make the directory you would use the command:
+	mkdir pe3_bash_number2
+
+
+viii. To move from pe3_bash to pe3_bash_number2, you would use the command:
+	cd /home/user/pe3_bash_number2 (or whatever the relevant file path is)
+
+ix. Pressing the up arrow key cycles through the previous commands typed into the terminal. It makes it easier if you are typing the same command multiple times such as the case when compiling.
+
+x. When the down arrow key is pressed, nothing occurs in the terminal. If the up arrow had been previous pressed to cycle through previous commands, the down arrow will have an effect in going forward on this list instead of backwards like the up arrow key does. The down arrow key also works in selection of files such as when using tab to auto complete file names and paths for a command. 
+
+xi. 
+
+xii. Two text editors you can open from the command line are vim and sublime. 
+	a. To open a file with sublime you would use the command:
+		subl 'file-name'
+	To open a file with vim you would use the command:
+		vim 'file-name'
+	b. To save files while using sublime, the command would be:
+		ctrl + s, simply because opening sublime pulls you out of the terminal interface and into sublime's interface.
+	To save a file in vim, you first want to make sure you are not in insert mode by pressing esc and then the command to save is:
+		:w
+	c. The command used to exit sublime would be ctrl + q, because you are in the sublime interface rather than in a terminal. In vim the command to quit would be :wq to save and quit or :q to quit without saving. 
+
+xiii. Two reasons for using the text editors above are for portability and
+	more control over the development environment. Personally, I use text editors over an IDE simply because its easier to move	between different VM's, my laptop or my desktop since I store these files in the cloud. Times in the past when I have tried using an IDE, the files didn't transfer over well because there were multiple other files that had to be attached for it to work. I also find that a text editor is more friendly to use across operating systems, as I use Windows, Linux and Mac OS because some IDE are not compatible on all of these operating systems. The other reason for using a text editor is for their ability to customized. I like being able to add features I use, and remove features I don't want and if there is a feature I want but can't find as a plug-in, I can write the code for one myself. I like having the ability to have so much control over my environment, and for me once I have it set up, I find myself being overall more productive because I am not having to constantly adjust or learn how all of the parts of the program work.

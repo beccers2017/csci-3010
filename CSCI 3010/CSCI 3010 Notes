@@ -1,0 +1,45 @@
+Scope:
+	--indentation/{}
+	--where your variable can be used
+	--where you can see changes to what variables
+	--header and other .cpp files
+	--privacy
+
+Pointers/References
+	--points to where a variable is stored
+	--dereference to change actual value
+	--can do pointer arithmetic 
+	--reference is an alias for a variable (another name for that specific variable)
+		--can't be null
+		--can't reassign them
+		--implicitly dereferenced when used
+Pass-by-Value vs. Pass-by-Reference
+
+
+Structs vs. Objects
+
+Structs
+	--all about structure
+	--grouping related data together
+	struct node {
+		pointer to next node;
+		int data;
+	};
+
+Objects
+	--about structure + functionality
+	class LinkedList {
+		public:
+			LinkedList();
+			void insert(int num);
+	};
+	
+	
+--operator overloading - built in functions, get custom versions, parameters must match
+--method overloading -  i.e., multiple constructors with different parameters
+
+Operator overloading
+bool operator==(const Book & b);
+bool Book::operator==(const Book & b) {
+	return title == b.title && author == b.author;
+}
